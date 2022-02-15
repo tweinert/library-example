@@ -8,7 +8,7 @@ window.onload = function() {
     displayBooksInLibrary();
 }
 
-
+/* OLD FUNCTION (CLASS)
 function Book(title, author, pages, hasRead) {
     this.title = title;
     this.author = author;
@@ -20,6 +20,19 @@ function Book(title, author, pages, hasRead) {
     this.info = function() {
         let hasReadStr = hasRead ? 'have read it' : 'not read yet';
         return `${title} by ${author}, ${pages} pages, ${hasReadStr}`;
+    }
+}*/
+
+class Book {
+    constructor(title, author, pages, hasRead) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.hasRead = hasRead;
+    }
+
+    toggleRead() {
+        this.hasRead = this.hasRead ? false : true;
     }
 }
 
