@@ -1,0 +1,23 @@
+.controlsHeader {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.libraryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bookDisplay {
+    width:19%;
+    padding-bottom: 19%;
+    margin-bottom: 2%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.bookDisplay button {
+    display: flex;
+}
